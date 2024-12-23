@@ -5,10 +5,11 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  ToastAndroid,
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useTheme} from '../../context/Theme';
 import {fontSize, fs, hp, scaleFontSize, wp} from '../../utils';
 import {Fonts} from '../../assets/Fonts';
@@ -18,9 +19,15 @@ import {useRoute} from '@react-navigation/native';
 import Icon, {Icons} from '../../assets/Icon';
 import TabNavigation from '../../components/TabBar';
 import LessonItem from '../../components/LessionItem';
+import {useDispatch, useSelector} from 'react-redux';
+import {addCourse} from '../../redux/slices/EnrolledCoursesSlice';
+import { Images } from '../../assets/Image';
 
 const CourseDetail = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Lessons');
+
+  const dispatch = useDispatch();
+  const {courses} = useSelector(state => state?.EnrolledCourses);
 
   const {theme, isDarkMode, toggleTheme} = useTheme();
   const styles = createStyles(theme);
@@ -31,14 +38,16 @@ const CourseDetail = ({navigation}) => {
     return <LessonItem item={item} />;
   };
 
+  const checkIfEnrolled = () => {
+    let isAvailable = courses.filter(i => i?.id === item.id);
+    return Boolean(isAvailable.length);
+  };
+
   return (
     <SafeAreaView style={styles?.container}>
       <Header navigation={navigation} title={'Course Details'} />
-      {/* <ScrollView> */}
       <Image
-        source={{
-          uri: 'https://s3-alpha-sig.figma.com/img/4079/c5af/c18c9157dbdc7771e115ac388994cb3a?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o6INFCu0ozGXwn5H6IuTT2V09ePesfhDc-ClaXKIDFH36RZvWRIR7-Z8qE-nkLf53EQcB~epx8Y~ORtSh2m4cYMEQPgpgpIGqvwWZvxgMQVi3eEir23HyswCmrgjrGpcZbRgiGAlXyS6MjXTDcDem-Pe1d5ZZ1dvgCU94SDTCyBCNuyYoiEM3jS0YwfmXuCTios0PXUFuLDGRDiZXP-ZPgcAJZOIjhKCt7Y1nhPrDi1to-uh-LKislhTq7jzsb9YZ21sdrOqQJtAmn5dRMZ2jfQmKkI6aVURSYYN4uJP~3w508AnkqFgSKuOmgydnUX0YH0GfxK9CiOh00fAqofErg__',
-        }}
+        source={Images?.course}
         style={styles?.image}
       />
       <Typography style={styles?.courseName}>{item?.name}</Typography>
@@ -126,12 +135,24 @@ const CourseDetail = ({navigation}) => {
         </View>
 
         <TouchableOpacity
+          onPress={() => {
+            dispatch(addCourse(item));
+            ToastAndroid.show(
+              'Course Enrolled Successfully!',
+              ToastAndroid.SHORT,
+            );
+          }}
+          disabled={checkIfEnrolled()}
           style={{
-            backgroundColor: theme?.royalBlue,
+            backgroundColor: checkIfEnrolled()
+              ? theme?.disabledBtn
+              : theme?.royalBlue,
             width: '70%',
             paddingVertical: 10,
             borderWidth: 1,
-            borderColor: theme?.royalBlue,
+            borderColor: checkIfEnrolled()
+              ? theme?.disabledBtn
+              : theme?.royalBlue,
             borderRadius: 5,
           }}>
           <Typography
@@ -144,7 +165,7 @@ const CourseDetail = ({navigation}) => {
                 letterSpacing: 0.6,
               },
             ]}>
-            Enroll Now
+            {checkIfEnrolled() ? 'Enrolled' : 'Enroll Now'}
           </Typography>
         </TouchableOpacity>
       </View>

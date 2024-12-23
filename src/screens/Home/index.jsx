@@ -21,6 +21,7 @@ import {fontSize, fs, hp, scaleFontSize, wp} from '../../utils';
 import {Fonts} from '../../assets/Fonts';
 import SearchBar from '../../components/SearchBar';
 import {Images} from '../../assets/Image';
+import CourseCardVertical from '../../components/CourseCardVertical';
 
 const Home = ({navigation}) => {
   const {theme, isDarkMode, toggleTheme} = useTheme();
@@ -28,77 +29,10 @@ const Home = ({navigation}) => {
 
   const renderItem = ({item, index}) => {
     return (
-      <Pressable
-      onPress={()=>navigation.navigate('CourseDetail',{item:item})}
-        style={{
-          height: hp(35),
-          width: wp(60),
-          backgroundColor: theme?.bright,
-          elevation: 1,
-          marginHorizontal: 5,
-          borderRadius: wp(3),
-          boxShadow: '2px -2px 8px rgba(81, 80, 80, 0.3) inset',
-          alignItems: 'center',
-          marginBottom: hp(2),
-        }}>
-        <Image
-          source={{
-            uri: 'https://s3-alpha-sig.figma.com/img/602c/9b91/fb2b67f55f5d9cf0c0e824c9b2fa85a9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ff24wF14DpioVNtRgtRi-6fwRWmijyeNy8yBv4TIx8K8vD1q39LMVsU5XNXwU1QQgXUBDRJKTH5fDKSZMNM0CxmiA~-3Tmb4W9bJNOToMxHx2Z0pxYQZhvlt3CYmo5UKQEhJxmPEY7WtiTF11GHkugcfU67xYhpxPcw~FnUAjrf~VMRqh9NzjGqSQEYLfjAyJiMZM357da1Rx~EWpouidolkwqP78Lp8uITCKVQ75a~ByORY9GBGn4JAciNvUPnsm2l-p1sRR8z-vGdccJvyDgFYGJNnjoeheqysLz7sRaxCUMdXP9WD4heUveRos-zKhMd4GW1jTkiigIQSVX8f5g__',
-          }}
-          style={{
-            height: '50%',
-            width: '90%',
-            backgroundColor: 'gray',
-            marginTop: 10,
-            borderRadius: wp(2),
-          }}
-          resizeMode="cover"
-        />
-        <View style={{marginVertical: 1, height: '25%', overflow: 'hidden'}}>
-          <Typography
-            style={{
-              marginHorizontal: 10,
-              fontSize: fs(16),
-              fontFamily: Fonts?.Medium,
-              color: theme?.mediumGray,
-            }}>
-            {item?.name}{' '}
-            <Typography style={{color: theme.softOrange}}>
-            ({item?.number_of_lessons} Lessions)
-            </Typography>
-          </Typography>
-        </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            width: '80%',
-          }}>
-          <View
-            style={{
-              backgroundColor: theme?.skyBlue,
-              paddingHorizontal: 10,
-              paddingVertical: 2,
-              borderRadius: 999,
-              opacity: 0.6,
-            }}>
-            <Typography style={{color: theme?.royalBlue}}>
-              {item?.duration}
-            </Typography>
-          </View>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Icon
-              name={'star'}
-              type={Icons?.AntDesign}
-              size={15}
-              color={theme?.goldenYellow}
-            />
-            <Typography style={{color: theme?.mediumGray, marginHorizontal: 1}}>
-              {item?.rating}
-            </Typography>
-          </View>
-        </View>
-      </Pressable>
+      <CourseCardVertical
+      item={item}
+      onPress={()=>navigation.navigate('CourseDetail', {item: item})}
+      />
     );
   };
 
@@ -123,32 +57,28 @@ const Home = ({navigation}) => {
             iconType={Icons?.Feather}
             iconSize={24}
             iconColor={theme?.darkGray}
-            style={{
-              backgroundColor: theme?.bright,
-              height: wp(12),
-              width: wp(12),
-            //   boxShadow: '0px',
-              borderRadius: 10,
-          boxShadow: '2px 2px 4px rgba(81, 80, 80, 0.3) inset',
-
-            }}
+            style={styles.utilityBtnStyle}
           />
         </View>
-        <SearchBar />
+        <SearchBar 
+        onSearch={()=>navigation.navigate("Search")}
+        />
         <Image
           source={Images?.hero}
           style={{
-            height: hp(25),
-            width: '110%',
+            height: hp(28),
+            width: '100%',
             alignSelf: 'center',
-            marginTop: 20,
+            marginTop: 15,
+            borderRadius:wp(5),
           }}
+          resizeMode='contain'
         />
         <Typography
           style={{
             fontSize: fs(20),
             fontFamily: Fonts?.Bold,
-            marginVertical: hp(2),
+            marginVertical: hp(1),
             marginHorizontal: wp(2),
             color: theme?.darkGray,
           }}>
@@ -166,7 +96,7 @@ const Home = ({navigation}) => {
           style={{
             fontSize: fs(20),
             fontFamily: Fonts?.Bold,
-            marginVertical: hp(2),
+            marginVertical: hp(1),
             marginHorizontal: wp(2),
             color: theme?.darkGray,
           }}>
@@ -198,7 +128,7 @@ const createStyles = theme =>
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      marginVertical: hp(2),
+      marginVertical: hp(1),
     },
     heading: {
       fontSize: fs(30),
@@ -210,4 +140,12 @@ const createStyles = theme =>
       color: theme?.mediumGray,
       fontFamily: Fonts?.Vibur,
     },
+    utilityBtnStyle:{
+      backgroundColor: theme?.bright,
+      height: wp(12),
+      width: wp(12),
+      //   boxShadow: '0px',
+      borderRadius: 10,
+      boxShadow: '2px 2px 4px rgba(81, 80, 80, 0.3) inset',
+    }
   });

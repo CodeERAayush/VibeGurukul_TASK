@@ -5,16 +5,19 @@ import { fontSize, fs, scaleFontSize } from './src/utils'
 import { ThemeProvider } from './src/context/Theme'
 import { NavigationContainer } from '@react-navigation/native'
 import StackNavigator from './src/navigation/stacknavigator'
+import { Provider } from 'react-redux'
+import { store } from './src/redux/store'
 
 const App = () => {
     // const {isDarkMode, theme} = useTheme()
   return (
+    <Provider store={store}>
     <ThemeProvider>
-        
     <NavigationContainer>
         <StackNavigator/>
     </NavigationContainer>
     </ThemeProvider>
+    </Provider>
   )
 }
 

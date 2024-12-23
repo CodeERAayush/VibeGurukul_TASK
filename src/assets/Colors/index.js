@@ -13,6 +13,7 @@ export const lightColors = {
     softOrange: "#FFAB76", // Vibrant elements or hover states
     shadowGray: "#00000033", // Subtle shadows
     lineGray: "#DEE2E6", // Dividers and separators
+    disabledBtn: "gray"
   };
   
   export const darkColors = {
@@ -29,5 +30,6 @@ export const lightColors = {
     softOrange: "#FF8A50", // Vibrant elements or hover states
     shadowGray: "#00000099", // Subtle shadows
     lineGray: "#3A3A3A", // Dividers and separators
+    disabledBtn: "gray"
   };
   
