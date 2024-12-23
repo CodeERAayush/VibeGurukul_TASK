@@ -12,8 +12,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		61746C1A2CC94AD3965052D3 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A446B47BAC7F4C78A830F246 /* Comfortaa-Bold.ttf */; };
+		62748D7902FD4E988D5BEE28 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70662C982B8449DABE401DE /* Comfortaa-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Course_Explorer-Course_ExplorerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Course_Explorer-Course_ExplorerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B3F63A1D013F4CFAA1279D31 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFF0EBBFF04F4714BF624FD6 /* Comfortaa-Light.ttf */; };
+		C33DE0A1C9D559C54A6609E7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		C89E19A8EBE9491187AE0082 /* Vibur-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD48F3E87C314388AC2EC4C4 /* Vibur-Regular.ttf */; };
+		D035D8C6A7A14340AEBA7F9F /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 568F2FC1FD0F42829E74E68D /* Comfortaa-Regular.ttf */; };
+		E6C9D5C744A24828B73D6C21 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7D4BF81CCA45ABA9CB28E7 /* Comfortaa-SemiBold.ttf */; };
+		EF92B23736B84E70BCB2F507 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 505007A7956349E4AF8072ED /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +47,18 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Course_Explorer/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Course_Explorer-Course_ExplorerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Course_Explorer-Course_ExplorerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-Course_Explorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Course_Explorer.debug.xcconfig"; path = "Target Support Files/Pods-Course_Explorer/Pods-Course_Explorer.debug.xcconfig"; sourceTree = "<group>"; };
+		505007A7956349E4AF8072ED /* index.js */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = index.js; path = ../src/assets/Fonts/index.js; sourceTree = "<group>"; };
+		568F2FC1FD0F42829E74E68D /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Regular.ttf"; path = "../src/assets/Fonts/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Course_Explorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Course_Explorer.release.xcconfig"; path = "Target Support Files/Pods-Course_Explorer/Pods-Course_Explorer.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Course_Explorer-Course_ExplorerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Course_Explorer-Course_ExplorerTests.debug.xcconfig"; path = "Target Support Files/Pods-Course_Explorer-Course_ExplorerTests/Pods-Course_Explorer-Course_ExplorerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Course_Explorer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Course_Explorer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Course_Explorer/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Course_Explorer-Course_ExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Course_Explorer-Course_ExplorerTests.release.xcconfig"; path = "Target Support Files/Pods-Course_Explorer-Course_ExplorerTests/Pods-Course_Explorer-Course_ExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7D4BF81CCA45ABA9CB28E7 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-SemiBold.ttf"; path = "../src/assets/Fonts/Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		A446B47BAC7F4C78A830F246 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Bold.ttf"; path = "../src/assets/Fonts/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		AFF0EBBFF04F4714BF624FD6 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Light.ttf"; path = "../src/assets/Fonts/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		B70662C982B8449DABE401DE /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Medium.ttf"; path = "../src/assets/Fonts/Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		DD48F3E87C314388AC2EC4C4 /* Vibur-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Vibur-Regular.ttf"; path = "../src/assets/Fonts/Vibur-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -124,6 +139,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				A630CEAE73484D0E97276415 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,6 +153,20 @@
 				00E356EE1AD99517003FC87E /* Course_ExplorerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A630CEAE73484D0E97276415 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A446B47BAC7F4C78A830F246 /* Comfortaa-Bold.ttf */,
+				AFF0EBBFF04F4714BF624FD6 /* Comfortaa-Light.ttf */,
+				B70662C982B8449DABE401DE /* Comfortaa-Medium.ttf */,
+				568F2FC1FD0F42829E74E68D /* Comfortaa-Regular.ttf */,
+				9F7D4BF81CCA45ABA9CB28E7 /* Comfortaa-SemiBold.ttf */,
+				DD48F3E87C314388AC2EC4C4 /* Vibur-Regular.ttf */,
+				505007A7956349E4AF8072ED /* index.js */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -245,6 +275,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C33DE0A1C9D559C54A6609E7 /* PrivacyInfo.xcprivacy in Resources */,
+				61746C1A2CC94AD3965052D3 /* Comfortaa-Bold.ttf in Resources */,
+				B3F63A1D013F4CFAA1279D31 /* Comfortaa-Light.ttf in Resources */,
+				62748D7902FD4E988D5BEE28 /* Comfortaa-Medium.ttf in Resources */,
+				D035D8C6A7A14340AEBA7F9F /* Comfortaa-Regular.ttf in Resources */,
+				E6C9D5C744A24828B73D6C21 /* Comfortaa-SemiBold.ttf in Resources */,
+				C89E19A8EBE9491187AE0082 /* Vibur-Regular.ttf in Resources */,
+				EF92B23736B84E70BCB2F507 /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535T7FV9S3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Course_Explorer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -496,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535T7FV9S3;
 				INFOPLIST_FILE = Course_Explorer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,7 +624,11 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -649,7 +693,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

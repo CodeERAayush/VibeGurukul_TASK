@@ -1,0 +1,126 @@
+[
+    {
+      "id": 1,
+      "name": "Introduction to React",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Learn the basics of React, a popular JavaScript library for building user interfaces.",
+      "full_description": "This course covers everything from setting up a React project to understanding components, state, and props. Perfect for beginners.",
+      "instructor_name": "John Doe",
+      "duration": "4 weeks",
+      "rating": "4.5",
+      "chapters": [
+        { "name": "Setting up React", "duration": "1 hour" },
+        { "name": "Understanding Components", "duration": "2 hours" },
+        { "name": "State and Props", "duration": "1.5 hours" },
+        { "name": "Building Your First App", "duration": "2 hours" }
+      ],
+      "number_of_lessons": 4,
+      "total_duration": "6.5 hours"
+    },
+    {
+      "id": 2,
+      "name": "Mastering Python",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Become a Python expert with this comprehensive course.",
+      "full_description": "This course takes you from Python basics to advanced concepts, including data structures, algorithms, and Python frameworks.",
+      "instructor_name": "Jane Smith",
+      "duration": "6 weeks",
+      "rating": "4.5",
+      "chapters": [
+        { "name": "Python Basics", "duration": "2 hours" },
+        { "name": "Data Structures", "duration": "3 hours" },
+        { "name": "Advanced Python", "duration": "2 hours" },
+        { "name": "Frameworks Overview", "duration": "1.5 hours" }
+      ],
+      "number_of_lessons": 4,
+      "total_duration": "8.5 hours"
+    },
+    {
+      "id": 3,
+      "name": "UI/UX Design Essentials",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Learn the principles of UI/UX design and create stunning user experiences.",
+      "full_description": "Explore wireframing, prototyping, and user research. Ideal for those interested in designing user-friendly applications.",
+      "instructor_name": "Emily Johnson",
+      "duration": "3 weeks",
+      "rating": "4.2",
+      "chapters": [
+        { "name": "Principles of Design", "duration": "2 hours" },
+        { "name": "Wireframing Basics", "duration": "1.5 hours" },
+        { "name": "Prototyping Tools", "duration": "2 hours" }
+      ],
+      "number_of_lessons": 3,
+      "total_duration": "5.5 hours"
+    },
+    {
+      "id": 4,
+      "name": "Full-Stack Web Development",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Build dynamic and responsive websites with this full-stack course.",
+      "full_description": "Learn front-end, back-end, and database development, using technologies like HTML, CSS, JavaScript, Node.js, and MongoDB.",
+      "instructor_name": "Michael Brown",
+      "duration": "8 weeks",
+      "rating": "4",
+      "chapters": [
+        { "name": "HTML & CSS Basics", "duration": "2 hours" },
+        { "name": "JavaScript Essentials", "duration": "3 hours" },
+        { "name": "Backend Development", "duration": "2.5 hours" },
+        { "name": "Databases with MongoDB", "duration": "3 hours" },
+        { "name": "Building a Full-Stack App", "duration": "4 hours" }
+      ],
+      "number_of_lessons": 5,
+      "total_duration": "14.5 hours"
+    },
+    {
+      "id": 5,
+      "name": "Data Science Bootcamp",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Dive into the world of data science and analytics.",
+      "full_description": "This bootcamp covers data analysis, machine learning, and visualization using Python, R, and popular libraries like Pandas and NumPy.",
+      "instructor_name": "Sophia Davis",
+      "duration": "10 weeks",
+      "rating": "3.9",
+      "chapters": [
+        { "name": "Data Analysis Basics", "duration": "3 hours" },
+        { "name": "Introduction to Machine Learning", "duration": "4 hours" },
+        { "name": "Data Visualization", "duration": "2.5 hours" }
+      ],
+      "number_of_lessons": 3,
+      "total_duration": "9.5 hours"
+    },
+    {
+      "id": 6,
+      "name": "Digital Marketing Strategies",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Master the art of digital marketing and grow your brand online.",
+      "full_description": "Learn SEO, social media marketing, content creation, and analytics to build effective marketing campaigns.",
+      "instructor_name": "Chris Wilson",
+      "duration": "5 weeks",
+      "rating": "4.1",
+      "chapters": [
+        { "name": "SEO Basics", "duration": "1.5 hours" },
+        { "name": "Social Media Strategies", "duration": "2 hours" },
+        { "name": "Content Marketing", "duration": "2.5 hours" }
+      ],
+      "number_of_lessons": 3,
+      "total_duration": "6 hours"
+    },
+    {
+      "id": 7,
+      "name": "Cloud Computing with AWS",
+      "thumbnail": "https://media.istockphoto.com/id/1158413597/photo/composition-with-books-on-the-table.jpg?s=612x612&w=0&k=20&c=oLTBwtJuiWQTv6NPYOc3iE3biVlp8LI7O6HX1p7WlKs=",
+      "short_description": "Gain expertise in cloud computing with Amazon Web Services.",
+      "full_description": "Understand the fundamentals of cloud architecture, deployment, and services like EC2, S3, and Lambda.",
+      "instructor_name": "Laura Thompson",
+      "duration": "7 weeks",
+      "rating": "3.5",
+      "chapters": [
+        { "name": "Introduction to Cloud Computing", "duration": "2 hours" },
+        { "name": "AWS Services Overview", "duration": "3 hours" },
+        { "name": "Hands-On Deployment", "duration": "2.5 hours" }
+      ],
+      "number_of_lessons": 3,
+      "total_duration": "7.5 hours"
+    }
+  ]
+  

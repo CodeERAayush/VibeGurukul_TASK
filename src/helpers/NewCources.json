@@ -1,0 +1,106 @@
+[
+    {
+      "id": 8,
+      "name": "Artificial Intelligence Fundamentals",
+      "thumbnail": "https://media.istockphoto.com/id/1174319078/photo/artificial-intelligence-digital-brain.jpg?s=612x612&w=0&k=20&c=abcd",
+      "short_description": "Get started with the basics of Artificial Intelligence and machine learning.",
+      "full_description": "This course introduces AI concepts like neural networks, supervised and unsupervised learning, and their applications.",
+      "instructor_name": "David Anderson",
+      "duration": "6 weeks",
+      "rating": "4.7",
+      "number_of_lessons": 6,
+      "total_duration": "9.5 hours",
+      "chapters": [
+        { "name": "Introduction to AI", "duration": "1 hour" },
+        { "name": "Neural Networks Basics", "duration": "1.5 hours" },
+        { "name": "Supervised Learning", "duration": "2 hours" },
+        { "name": "Unsupervised Learning", "duration": "2 hours" },
+        { "name": "AI Applications", "duration": "1.5 hours" },
+        { "name": "Future of AI", "duration": "1 hour" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Cybersecurity Essentials",
+      "thumbnail": "https://media.istockphoto.com/id/1174319903/photo/security-and-privacy.jpg?s=612x612&w=0&k=20&c=efgh",
+      "short_description": "Learn how to secure systems and prevent cyber attacks.",
+      "full_description": "Explore topics like network security, encryption, threat analysis, and ethical hacking techniques.",
+      "instructor_name": "Rachel Green",
+      "duration": "8 weeks",
+      "rating": "4.6",
+      "number_of_lessons": 8,
+      "total_duration": "13.5 hours",
+      "chapters": [
+        { "name": "Introduction to Cybersecurity", "duration": "1 hour" },
+        { "name": "Network Security Basics", "duration": "2 hours" },
+        { "name": "Encryption Techniques", "duration": "2 hours" },
+        { "name": "Threat Analysis", "duration": "1.5 hours" },
+        { "name": "Ethical Hacking", "duration": "2 hours" },
+        { "name": "Incident Response", "duration": "1 hour" },
+        { "name": "Cybersecurity Tools", "duration": "1.5 hours" },
+        { "name": "Future of Cybersecurity", "duration": "1 hour" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Game Development with Unity",
+      "thumbnail": "https://media.istockphoto.com/id/1174320356/photo/game-development.jpg?s=612x612&w=0&k=20&c=ijkl",
+      "short_description": "Design and develop games using Unity.",
+      "full_description": "Learn game physics, 3D modeling, and scripting with C# to create interactive games.",
+      "instructor_name": "Steve Clark",
+      "duration": "10 weeks",
+      "rating": "4.8",
+      "number_of_lessons": 10,
+      "total_duration": "20 hours",
+      "chapters": [
+        { "name": "Introduction to Unity", "duration": "1.5 hours" },
+        { "name": "Game Physics", "duration": "2 hours" },
+        { "name": "3D Modeling Basics", "duration": "2 hours" },
+        { "name": "Scripting with C#", "duration": "3 hours" },
+        { "name": "Level Design", "duration": "2.5 hours" },
+        { "name": "Animation Techniques", "duration": "2 hours" },
+        { "name": "Audio Integration", "duration": "1.5 hours" },
+        { "name": "Testing and Debugging", "duration": "1 hour" },
+        { "name": "Game Optimization", "duration": "1.5 hours" },
+        { "name": "Publishing Games", "duration": "2 hours" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Blockchain Technology Basics",
+      "thumbnail": "https://media.istockphoto.com/id/1174320720/photo/blockchain-network.jpg?s=612x612&w=0&k=20&c=mnop",
+      "short_description": "Understand the fundamentals of blockchain technology.",
+      "full_description": "Learn how blockchain works, its applications in cryptocurrencies, and its potential in other industries.",
+      "instructor_name": "Anna White",
+      "duration": "5 weeks",
+      "rating": "4.3",
+      "number_of_lessons": 5,
+      "total_duration": "7 hours",
+      "chapters": [
+        { "name": "Introduction to Blockchain", "duration": "1 hour" },
+        { "name": "Cryptocurrencies Overview", "duration": "1.5 hours" },
+        { "name": "Blockchain Mechanics", "duration": "2 hours" },
+        { "name": "Applications of Blockchain", "duration": "1.5 hours" },
+        { "name": "Future of Blockchain", "duration": "1 hour" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Photography for Beginners",
+      "thumbnail": "https://media.istockphoto.com/id/1174321257/photo/photography.jpg?s=612x612&w=0&k=20&c=qrst",
+      "short_description": "Capture stunning photographs with this beginner-friendly course.",
+      "full_description": "Master the basics of photography, including composition, lighting, and camera settings.",
+      "instructor_name": "James Taylor",
+      "duration": "4 weeks",
+      "rating": "4.5",
+      "number_of_lessons": 4,
+      "total_duration": "5 hours",
+      "chapters": [
+        { "name": "Understanding Camera Basics", "duration": "1 hour" },
+        { "name": "Lighting Techniques", "duration": "1.5 hours" },
+        { "name": "Composition Essentials", "duration": "1.5 hours" },
+        { "name": "Editing Photos", "duration": "1 hour" }
+      ]
+    }
+  ]
+  
