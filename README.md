@@ -1,79 +1,128 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Course Explorer App
 
-# Getting Started
+A React Native mobile application that allows users to browse, search, and enroll in courses. The app provides an intuitive interface for exploring educational content with additional features like theme customization and search functionality.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+### Core Features
+- Browse available courses with detailed information
+- View comprehensive course details
+- Enroll in courses
+- Track enrolled courses
+- Bottom tab navigation for seamless user experience
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Additional Features
+1. **Search Functionality**
+   - Real-time course search
+   - Filter courses by name or instructor
+   - Debounced Search
 
-To start Metro, run the following command from the _root_ of your React Native project:
+2. **Theme Customization**
+   - Toggle between light and dark modes
+   - Persistent theme preferences
+   - Accessibility-friendly contrast ratios
+
+## Technology Stack
+
+- React Native
+- React Navigation
+- Context API for themes
+- Redux Toolkit for enrolled courses
+- Redux-Persist for persistant data
+- Styled Components
+- React Native Vector Icons
+- Async Storage for local data persistence
+
+## Installation
 
 ```bash
-# using npm
+# Clone the repository
+git clone https://github.com/CodeERAayush/VibeGurukul_TASK.git
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm start
 
-# OR using Yarn
-yarn start
+# Run on iOS
+npx react-native run-ios
+
+# Run on Android
+npx react-native run-android
 ```
 
-## Step 2: Start your Application
+## Project Structure
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```
+src/
+├── components/
+│   ├── CourseCardHorizontal.jsx
+│   ├── CourseCardVertical.jsx
+│   ├── EmptyComponent.jsx
+│   ├── Header.jsx
+│   ├── LessionItem.jsx
+│   ├── SearchBar.jsx
+│   ├── TabBar.jsx
+│   ├── Typography.jsx
+│   └── UtilityButton.jsx
+├── screens/
+│   ├── Home/
+│   ├── CourseDetails/
+│   ├── Search/
+│   └── Enrolled/
+├── context/
+│   └── Theme.js
+├── navigation/
+│   ├── stacknavigator.js
+│   └── bottomnavigator.js
+├── helpers/
+│   ├── DummyCources.json
+│   └── NewCources.json
+├── redux/
+│   ├── slices/
+│   └── store/
+├── assets/
+│   ├── Animations/
+│   ├── Fonts/
+│   ├── Icon/
+│   ├── Image/
+│   └── Colors/
+└── utils/
 ```
 
-### For iOS
+## Implementation Approach
 
-```bash
-# using npm
-npm run ios
+### State Management
+- Utilized Context API for theme state management 
+- Utilized Redux-Toolkit for Enrolled Course state management 
+- Kept data persistent across the app 
 
-# OR using Yarn
-yarn ios
-```
+### Navigation
+- Bottom tab navigator for main screens
+- Stack navigator for course details and search
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### UI/UX Considerations
+- Responsive design for various screen sizes
+- Smooth animations and transitions
+- Intuitive user interface
+- Accessibility features
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### Data Persistence
+- Redux-Persist for enrolled courses
+- Theme preferences persistence
 
-## Step 3: Modifying your App
 
-Now that you have successfully run the app, let's modify it.
+## Contributing
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+## Contact
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Your Name - [@Aayush Pandey](https://www.linkedin.com/in/aayush-pandey-a8b65b203/)
+Project Link: [Project Link](https://github.com/CodeERAayush/VibeGurukul_TASK)
