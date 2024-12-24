@@ -32,7 +32,7 @@ A React Native mobile application that allows users to browse, search, and enrol
 - React Navigation
 - Context API for themes
 - Redux Toolkit for enrolled courses
-- Redux-Persist for persistant data
+- Redux-Persist for persistent data
 - Styled Components
 - React Native Vector Icons
 - Async Storage for local data persistence
