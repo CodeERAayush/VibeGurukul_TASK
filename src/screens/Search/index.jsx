@@ -1,4 +1,4 @@
-import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect, useState, useCallback} from 'react';
 import Header from '../../components/Header';
 import {useTheme} from '../../context/Theme';
@@ -8,7 +8,7 @@ import EmptyComponent from '../../components/EmptyComponent';
 import Courses from '../../helpers/DummyCourses.json';
 import NewCourses from '../../helpers/NewCources.json';
 import SearchBar from '../../components/SearchBar';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 const Search = ({navigation}) => {
   const {theme} = useTheme();
   const styles = createStyles(theme);

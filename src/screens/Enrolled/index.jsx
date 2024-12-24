@@ -1,4 +1,4 @@
-import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Header from '../../components/Header';
 import {useTheme} from '../../context/Theme';
@@ -6,7 +6,7 @@ import {useSelector} from 'react-redux';
 import CourseCardHorizontal from '../../components/CourseCardHorizontal';
 import {hp} from '../../utils';
 import EmptyComponent from '../../components/EmptyComponent';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 const Enrolled = ({navigation}) => {
   const {theme, isDarkMode, toggleTheme} = useTheme();
   const styles = createStyles(theme);

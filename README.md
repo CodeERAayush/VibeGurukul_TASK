@@ -18,7 +18,7 @@ A React Native mobile application that allows users to browse, search, and enrol
 ### Additional Features
 1. **Search Functionality**
    - Real-time course search
-   - Filter courses by name or instructor
+   - Filter courses by name 
    - Debounced Search
 
 2. **Theme Customization**

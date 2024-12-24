@@ -1,7 +1,6 @@
 import {
   FlatList,
   Image,
-  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -22,6 +21,7 @@ import LessonItem from '../../components/LessionItem';
 import {useDispatch, useSelector} from 'react-redux';
 import {addCourse, removeCourse} from '../../redux/slices/EnrolledCoursesSlice';
 import {Images} from '../../assets/Image';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const CourseDetail = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Lessons');
@@ -221,7 +221,7 @@ const createStyles = theme =>
       fontFamily: Fonts?.Regular,
     },
     image: {
-      height: hp(30),
+      height: hp(20),
       width: '100%',
       marginTop: hp(4),
       borderRadius: wp(5),

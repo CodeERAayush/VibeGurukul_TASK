@@ -2,7 +2,6 @@ import {
   FlatList,
   Image,
   Pressable,
-  SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -22,6 +21,7 @@ import {Fonts} from '../../assets/Fonts';
 import SearchBar from '../../components/SearchBar';
 import {Images} from '../../assets/Image';
 import CourseCardVertical from '../../components/CourseCardVertical';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Home = ({navigation}) => {
   const {theme, isDarkMode, toggleTheme} = useTheme();
