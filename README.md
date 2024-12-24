@@ -46,6 +46,10 @@ git clone https://github.com/CodeERAayush/VibeGurukul_TASK.git
 # Install dependencies
 npm install
 
+# Install dependencies (For IOS)
+cd ios
+pod install
+
 # Start the development server
 npm start
 
@@ -128,5 +132,5 @@ src/
 
 ## Contact
 
-Your Name - [@Aayush Pandey](https://www.linkedin.com/in/aayush-pandey-a8b65b203/)
+Name - [@Aayush Pandey](https://www.linkedin.com/in/aayush-pandey-a8b65b203/)
 Project Link: [Project Link](https://github.com/CodeERAayush/VibeGurukul_TASK)
