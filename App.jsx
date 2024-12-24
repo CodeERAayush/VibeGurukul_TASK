@@ -6,17 +6,20 @@ import { ThemeProvider } from './src/context/Theme'
 import { NavigationContainer } from '@react-navigation/native'
 import StackNavigator from './src/navigation/stacknavigator'
 import { Provider } from 'react-redux'
-import { store } from './src/redux/store'
+import { persistor, store } from './src/redux/store'
+import { PersistGate } from 'redux-persist/integration/react'
 
 const App = () => {
     // const {isDarkMode, theme} = useTheme()
   return (
     <Provider store={store}>
+       <PersistGate loading={null} persistor={persistor}>
     <ThemeProvider>
     <NavigationContainer>
         <StackNavigator/>
     </NavigationContainer>
     </ThemeProvider>
+    </PersistGate>
     </Provider>
   )
 }

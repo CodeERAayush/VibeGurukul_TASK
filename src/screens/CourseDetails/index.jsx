@@ -20,8 +20,8 @@ import Icon, {Icons} from '../../assets/Icon';
 import TabNavigation from '../../components/TabBar';
 import LessonItem from '../../components/LessionItem';
 import {useDispatch, useSelector} from 'react-redux';
-import {addCourse} from '../../redux/slices/EnrolledCoursesSlice';
-import { Images } from '../../assets/Image';
+import {addCourse, removeCourse} from '../../redux/slices/EnrolledCoursesSlice';
+import {Images} from '../../assets/Image';
 
 const CourseDetail = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Lessons');
@@ -43,14 +43,20 @@ const CourseDetail = ({navigation}) => {
     return Boolean(isAvailable.length);
   };
 
+  const removeCoursefromList = () => {
+    dispatch(removeCourse(item?.id));
+    ToastAndroid.show('Course Removed Successfully!', ToastAndroid.SHORT);
+  };
+
   return (
     <SafeAreaView style={styles?.container}>
       <Header navigation={navigation} title={'Course Details'} />
-      <Image
-        source={Images?.course}
-        style={styles?.image}
-      />
+      <Image source={Images?.course} style={styles?.image} />
       <Typography style={styles?.courseName}>{item?.name}</Typography>
+      <Typography
+        style={[styles?.courseName, {marginTop: 0, fontSize: fs(15)}]}>
+        By- {item?.instructor_name}
+      </Typography>
       <View style={styles.subContainer}>
         <View style={styles.infoContainer}>
           <Icon
@@ -78,7 +84,7 @@ const CourseDetail = ({navigation}) => {
           <Typography style={styles.ratingText}>4.9</Typography>
         </View>
       </View>
-      {/* 'Lessons', 'Description' */}
+
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
       {activeTab === 'Lessons' ? (
         <View style={styles.dataConatiner}>
@@ -120,19 +126,30 @@ const CourseDetail = ({navigation}) => {
           alignItems: 'center',
           paddingHorizontal: wp(5),
         }}>
-        <View
-          style={{
-            paddingHorizontal: wp(5),
-            paddingVertical: 8,
-            borderWidth: 1,
-            borderRadius: 5,
-            borderColor: theme?.softOrange,
-          }}>
-          <Typography
-            style={[styles?.subTextDeascription, {color: theme?.softOrange}]}>
-            ₹ 300
-          </Typography>
-        </View>
+        {checkIfEnrolled() ? (
+          <TouchableOpacity onPress={removeCoursefromList}>
+            <Icon
+              type={Icons?.AntDesign}
+              name={'delete'}
+              size={26}
+              color={'red'}
+            />
+          </TouchableOpacity>
+        ) : (
+          <View
+            style={{
+              paddingHorizontal: wp(5),
+              paddingVertical: 8,
+              borderWidth: 1,
+              borderRadius: 5,
+              borderColor: theme?.softOrange,
+            }}>
+            <Typography
+              style={[styles?.subTextDeascription, {color: theme?.softOrange}]}>
+              ₹ 300
+            </Typography>
+          </View>
+        )}
 
         <TouchableOpacity
           onPress={() => {
